@@ -73,5 +73,5 @@ for root, folders, files in os.walk('test'):
                     df = df.append(item, ignore_index=True)
                     sid += 1
 
-result.to_csv("qa-en.tsv", index=False, sep='\t', encoding='utf-8')
+df.to_csv("qa-en.tsv", index=False, sep='\t', encoding='utf-8')
 print('DONE')
